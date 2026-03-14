@@ -12,8 +12,8 @@ public class ClientDemo
     public static void main(String[] args) 
     {
         ClientDemo cd = new ClientDemo();
-        cd.addRecord();
-        //cd.displayRecord();
+        //cd.addRecord();
+        cd.displayRecord();
     }
 
     public void addRecord()
@@ -26,10 +26,10 @@ public class ClientDemo
 
         Project p = new Project();
 
-        p.setName("KLEF");
+        p.setName("Event Management");
         p.setDescription("Spring Boot Project");
-        p.setDate("12-03-2026");
-        p.setStatus(true);
+        p.setDate("14-03-2026");
+        p.setStatus(false);
 
         Transaction t = session.beginTransaction();
 
